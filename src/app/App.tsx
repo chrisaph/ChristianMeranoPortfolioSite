@@ -7,7 +7,7 @@ const projects = [
   {
     id: "01",
     title: "Vendicity",
-    subtitle: "SME Business Management System",
+    subtitle: "SME Decision Support System",
     type: "Capstone · Full Stack",
     year: "2026",
     stack: ["ASP.NET Core", "Blazor", "PostgreSQL", "Docker", "AWS"],
@@ -43,7 +43,7 @@ const projects = [
     title: "EvalTrack",
     subtitle: "Professor Evaluation System",
     type: "Django MVT · Python",
-    year: "2024",
+    year: "2026",
     stack: ["Python", "Django", "PostgreSQL"],
     description:
       "Full-stack Django app for academic evaluation tracking with admin dashboard and report generation.",
@@ -54,7 +54,7 @@ const projects = [
     title: "MerMitchTV",
     subtitle: "Android Streaming App",
     type: "Kotlin · Android",
-    year: "2024",
+    year: "2025",
     stack: ["Kotlin", "Jetpack Compose", "Android"],
     description:
       "Native Android app for TV show streaming using Kotlin in IntelliJ IDEA with custom UI components.",
@@ -65,7 +65,7 @@ const projects = [
     title: "IPOPHIL",
     subtitle: "Government IP Office Prototype",
     type: "TypeScript · Figma",
-    year: "2024",
+    year: "2026",
     stack: ["TypeScript", "HTML/CSS", "Figma"],
     description:
       "Front-end prototype for the Intellectual Property Office of the Philippines, designed from Figma mockups.",
@@ -76,7 +76,7 @@ const projects = [
     title: "TV Similarity",
     subtitle: "Data Mining with Python",
     type: "Jupyter Notebook · ML",
-    year: "2024",
+    year: "2025",
     stack: ["Python", "Pandas", "Scikit-learn"],
     description:
       "Data mining project analyzing TV show similarity using machine learning techniques in Jupyter Notebook.",
@@ -87,11 +87,33 @@ const projects = [
     title: "RPG Generator",
     subtitle: "DevOps on Linux VM",
     type: "DevOps · Linux",
-    year: "2024",
+    year: "2026",
     stack: ["Linux", "Bash", "Python", "VM"],
     description:
       "Development operations project running an RPG generator system on a Linux virtual machine environment.",
     link: "https://github.com/chrisaph/rpg_generator",
+  },
+  {
+    id: "09",
+    title: "Personal Watchlist",
+    subtitle: "Python on Jupyter Notebook",
+    type: "Python · Jupyter Notebook",
+    year: "2025",
+    stack: ["Python", "Jupyter Notebook"],
+    description:
+      "Development operations project running an RPG generator system on a Linux virtual machine environment.",
+    link: "https://github.com/chrisaph/PersonalWatchlist",
+  },
+  {
+    id: "What's Next?",
+    title: "Future Projects",
+    subtitle: "",
+    type: "",
+    year: "",
+    stack: ["FUTUREEEEEEEEE!!!! - Squidward"],
+    description:
+      "The future hasn't been written yet. No one's has. Your future is whatever you make it. So make it a good one. - Doc Brown, Back to the Future Part III",
+    link: "https://github.com/chrisaph",
   },
 ];
 
@@ -110,7 +132,7 @@ const skillGroups = [
   },
   {
     label: "DevOps & Cloud",
-    skills: ["Docker", "AWS", "Linux", "Git / GitHub", "Jenkins", "Railway"],
+    skills: ["Docker", "AWS", "Linux", "Git / GitHub", "Render", "Railway"],
   },
   {
     label: "Tools & Design",
@@ -123,12 +145,12 @@ const skillGroups = [
 ];
 
 const awards = [
-  { title: "Benilde Hackathon 3.0", detail: "1st Place Winner", date: "2023", top: true },
+  { title: "Benilde Hackathon 3.0", detail: "1st Place Winner", date: "Apr 2026", top: true },
   { title: "First Honors Dean's List", detail: "3.75 GPA · 4th Year", date: "Mar 2026" },
   { title: "First Honors Dean's List", detail: "3.75 GPA · 3rd Year", date: "Oct 2025" },
   { title: "First Honors Dean's List", detail: "3.58 GPA · 3rd Year", date: "May 2025" },
   { title: "Second Honors Dean's List", detail: "3.13 GPA · 1st Year", date: "Mar 2023" },
-  { title: "IT Python Certified Practitioner", detail: "Certiport Certification", date: "2024" },
+  { title: "IT Python Certified Practitioner", detail: "Certiport Certification", date: "2026" },
 ];
 
 /* ── HOOKS ────────────────────────────────────────────────── */
@@ -539,7 +561,7 @@ export default function App() {
             className="text-[8px] tracking-[0.4em] uppercase rotate-0"
             style={{ fontFamily: "'Space Mono', monospace", color: "#EDE8D0" }}
           >
-            scroll
+            Proverbs 16:9
           </span>
         </div>
       </section>
@@ -574,10 +596,10 @@ export default function App() {
                 </h2>
 
                 <p className="text-muted-foreground leading-[1.85] mb-5 max-w-prose text-[15px]">
-                  I'm a 4th-year BS Information Systems student at De La Salle–College of Saint Benilde, Taguig. I build full-stack web applications, design UI/UX prototypes, and tinker with DevOps pipelines when I'm bored.
+                  I'm a 4th-year BS Information Systems student at De La Salle–College of Saint Benilde currently residing in Taguig. I build full-stack web applications, design UI/UX prototypes, and tinker with DevOps pipelines as well as Embedded Systems.
                 </p>
                 <p className="text-muted-foreground leading-[1.85] max-w-prose text-[15px]">
-                  My capstone project Vendicity — a cloud-hosted SME business management system — was built alongside a real client, teaching me that good software starts with good listening. Available for OJT positions starting August 2026.
+                  My capstone project Vendicity — a cloud-hosted SME Decision Support System — was built alongside a real client, teaching me that good software starts with good listening. Available for OJT positions starting August/September 2026.
                 </p>
               </div>
             </FadeUp>
@@ -586,10 +608,10 @@ export default function App() {
             <FadeUp delay={220}>
               <div className="grid grid-cols-2 gap-px border border-foreground/10" style={{ background: "rgba(28,25,20,0.08)" }}>
                 {[
-                  { n: "08", label: "Projects built" },
                   { n: "04", label: "Dean's List awards" },
                   { n: "3.75", label: "Top GPA" },
                   { n: "400+", label: "OJT hours req." },
+                  { n: "20+", label: "Projects built" },
                 ].map((stat) => (
                   <div
                     key={stat.label}
@@ -629,7 +651,7 @@ export default function App() {
                   className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground mt-2"
                   style={{ fontFamily: "'Space Mono', monospace" }}
                 >
-                  2022 – 2026 · Taguig, Philippines
+                  2022 – 2026 · Manila, Philippines
                 </p>
               </div>
             </FadeUp>
@@ -746,7 +768,7 @@ export default function App() {
                         className="text-lg font-light"
                         style={{ color: "rgba(237,232,208,0.45)" }}
                       >
-                        SME Business Management System
+                        SME Decision Support System
                       </p>
                     </div>
 
@@ -775,7 +797,7 @@ export default function App() {
                     className="text-[15px] leading-[1.85] max-w-2xl mb-10"
                     style={{ color: "rgba(237,232,208,0.55)" }}
                   >
-                    Cloud-hosted SME platform with multi-role auth, inventory management, and business analytics. Built with a real client through the full SDLC — from requirements gathering to production deployment on AWS.
+                    Cloud-hosted SME platform with multi-role auth, inventory management, and business analytics. Built with a real client through the full SDLC from requirements gathering to production deployment on AWS.
                   </p>
 
                   <div
@@ -956,7 +978,7 @@ export default function App() {
                     3.75
                   </p>
                   <p className="text-muted-foreground text-sm">
-                    Top GPA — First Honors Dean's Lister for consecutive terms. Consistently ranked in the top percentile of the BS Information Systems program.
+                    Top GPA - First Honors Dean's Lister for consecutive terms. Consistently ranked in the top percentile of the BS Information Systems program.
                   </p>
                 </div>
 
@@ -974,7 +996,7 @@ export default function App() {
                     Benilde Hackathon 3.0
                   </p>
                   <p className="text-muted-foreground text-sm">
-                    1st Place in a competitive 24-hour hackathon against multiple teams. Delivered a working full-stack prototype under extreme time constraints.
+                    1st Place in a competitive 72-hour hackathon against multiple teams of all courses and professors who are not event organizers. My submission included budget assessments, a logo, and technical specifications such as hosting, language, development environment, and timelines from my knowledge as an Information Systems student.
                   </p>
                 </div>
               </div>
@@ -1025,7 +1047,7 @@ export default function App() {
 
             <div className="flex flex-col gap-4">
               <a
-                href="mailto:christianmerano@dlscsb.edu.ph"
+                href="mailto:christianmerano26@gmail.com"
                 className="group inline-flex items-center gap-4 border border-foreground/15 px-8 py-5 hover:border-accent hover:bg-accent transition-all duration-300 w-fit"
               >
                 <Mail size={18} className="group-hover:text-background transition-colors duration-300" />
@@ -1033,7 +1055,7 @@ export default function App() {
                   className="text-[12px] tracking-[0.2em] uppercase group-hover:text-background transition-colors duration-300"
                   style={{ fontFamily: "'Space Mono', monospace" }}
                 >
-                  christianmerano@dlscsb.edu.ph
+                  christianmerano26@gmail.com
                 </span>
                 <ArrowUpRight size={14} className="group-hover:text-background transition-colors duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 duration-300" />
               </a>
