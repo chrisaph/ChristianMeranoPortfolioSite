@@ -1062,7 +1062,7 @@ export default function App() {
               <ArrowUpRight size={14} />
             </a>
 
-              <div className="flex items-center gap-4 mt-2">
+              <div className="flex items-center justify-center md:justify-start gap-4 mt-2">
                 <a
                   href="https://github.com/chrisaph"
                   target="_blank"
