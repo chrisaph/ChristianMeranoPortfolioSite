@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Github, Linkedin, Mail, ArrowUpRight, ChevronUp, ExternalLink } from "lucide-react";
-
+import { FileText } from "lucide-react";
 /* ── DATA ─────────────────────────────────────────────────── */
 
 const projects = [
@@ -598,9 +598,30 @@ export default function App() {
                 <p className="text-muted-foreground leading-[1.85] mb-5 max-w-prose text-[15px]">
                   I'm a 4th-year BS Information Systems student at De La Salle–College of Saint Benilde currently residing in Taguig. I build full-stack web applications, design UI/UX prototypes, and tinker with DevOps pipelines as well as Embedded Systems.
                 </p>
+
                 <p className="text-muted-foreground leading-[1.85] max-w-prose text-[15px]">
                   My capstone project Vendicity — a cloud-hosted SME Decision Support System — was built alongside a real client, teaching me that good software starts with good listening. Available for OJT positions starting August/September 2026.
                 </p>
+              </div>
+
+              <div className="flex justify-center mt-8">
+                <a
+                  href="/BS-InformationSystems_Merano_Christian.pdf"
+                  download
+                  className="group inline-flex items-center gap-3 border border-foreground/15 px-8 py-4 hover:border-accent hover:bg-accent transition-all duration-300"
+                >
+                  <FileText
+                    size={18}
+                    className="group-hover:text-background transition-colors duration-300"
+                  />
+
+                  <span
+                    className="text-[12px] tracking-[0.2em] uppercase group-hover:text-background transition-colors duration-300"
+                    style={{ fontFamily: "'Space Mono', monospace" }}
+                  >
+                    Download Resume
+                  </span>
+                </a>
               </div>
             </FadeUp>
 
