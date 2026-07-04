@@ -1047,18 +1047,20 @@ export default function App() {
 
             <div className="flex flex-col gap-4">
               <a
-                href="mailto:christianmerano26@gmail.com"
-                className="group inline-flex items-center gap-4 border border-foreground/15 px-8 py-5 hover:border-accent hover:bg-accent transition-all duration-300 w-fit"
+              href="mailto:christianmerano26@gmail.com"
+              className="group inline-flex items-center gap-3 border border-foreground/15 px-6 py-5 hover:border-accent hover:bg-accent transition-all duration-300 max-w-full overflow-hidden"
+            >
+              <Mail size={18} />
+
+              <span
+                className="flex-1 text-center text-[10px] sm:text-[12px] tracking-[0.15em] uppercase break-all"
+                style={{ fontFamily: "'Space Mono', monospace" }}
               >
-                <Mail size={18} className="group-hover:text-background transition-colors duration-300" />
-                <span
-                  className="text-[12px] tracking-[0.2em] uppercase group-hover:text-background transition-colors duration-300"
-                  style={{ fontFamily: "'Space Mono', monospace" }}
-                >
-                  christianmerano26@gmail.com
-                </span>
-                <ArrowUpRight size={14} className="group-hover:text-background transition-colors duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 duration-300" />
-              </a>
+                christianmerano26@gmail.com
+              </span>
+
+              <ArrowUpRight size={14} />
+            </a>
 
               <div className="flex items-center gap-4 mt-2">
                 <a
