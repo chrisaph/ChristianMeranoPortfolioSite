@@ -328,17 +328,22 @@ export default function App() {
             className="group flex items-baseline gap-1"
           >
             <span
-              className="text-[22px] font-black leading-none tracking-tight text-foreground transition-colors"
-              style={{ fontFamily: "'Fraunces', serif" }}
-            >
-              CM
-            </span>
-            <span
-              className="text-[9px] tracking-[0.3em] uppercase text-muted-foreground group-hover:text-accent transition-colors"
-              style={{ fontFamily: "'Space Mono', monospace" }}
-            >
-              ·dev
-            </span>
+            className="text-[22px] font-black leading-none tracking-tight transition-colors"
+            style={{
+              fontFamily: "'Fraunces', serif",
+              color: scrolled ? "inherit" : "#EDE8D0",
+            }}
+          >
+            CM
+          </span>
+          <span
+            className={`text-[9px] tracking-[0.3em] uppercase transition-colors ${
+              scrolled ? "text-muted-foreground group-hover:text-accent" : "text-[#ffffff]"
+            }`}
+            style={{ fontFamily: "'Space Mono', monospace" }}
+          >
+            ·dev
+          </span>
           </button>
 
           {/* desktop links */}
@@ -387,13 +392,19 @@ export default function App() {
             aria-label="Menu"
           >
             <span
-              className={`block w-6 h-[1.5px] bg-foreground transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-[7px]" : ""}`}
+              className={`block w-6 h-[1.5px] transition-all duration-300 ${
+                scrolled ? "bg-foreground" : "bg-[#EDE8D0]"
+              } ${menuOpen ? "rotate-45 translate-y-[7px]" : ""}`}
             />
             <span
-              className={`block w-6 h-[1.5px] bg-foreground transition-all duration-300 ${menuOpen ? "opacity-0 scale-x-0" : ""}`}
+              className={`block w-6 h-[1.5px] transition-all duration-300 ${
+                scrolled ? "bg-foreground" : "bg-[#EDE8D0]"
+              } ${menuOpen ? "opacity-0 scale-x-0" : ""}`}
             />
             <span
-              className={`block w-6 h-[1.5px] bg-foreground transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-[7px]" : ""}`}
+              className={`block w-6 h-[1.5px] transition-all duration-300 ${
+                scrolled ? "bg-foreground" : "bg-[#EDE8D0]"
+              } ${menuOpen ? "-rotate-45 -translate-y-[7px]" : ""}`}
             />
           </button>
         </div>
@@ -514,8 +525,7 @@ export default function App() {
                 </p>
               </div>
 
-              <div className="flex items-center gap-6">
-                <a
+              <div className="flex items-center justify-center md:justify-start gap-6">                <a
                   href="https://github.com/chrisaph"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -556,7 +566,7 @@ export default function App() {
           className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-25"
           aria-hidden
         >
-          <div className="w-px h-12 bg-background/40" style={{ animation: "ticker 2s ease-in-out infinite alternate" }} />
+          
           <span
             className="text-[8px] tracking-[0.4em] uppercase rotate-0"
             style={{ fontFamily: "'Space Mono', monospace", color: "#EDE8D0" }}
@@ -600,7 +610,7 @@ export default function App() {
                 </p>
 
                 <p className="text-muted-foreground leading-[1.85] max-w-prose text-[15px]">
-                  My capstone project Vendicity — a cloud-hosted SME Decision Support System — was built alongside a real client, teaching me that good software starts with good listening. Available for OJT positions starting August/September 2026.
+                  My capstone project Vendicity, a cloud-hosted SME Decision Support System, was built alongside a real client which taught me that good software starts with good listening. Available for OJT positions starting August/September 2026.
                 </p>
               </div>
 
@@ -851,11 +861,11 @@ export default function App() {
                           href={project.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-2 hover:text-accent"
-                          style={{ color: "rgba(237,232,208,0.6)" }}
+                          className="opacity-100 group-hover:opacity-100 transition-opacity duration-300 p-2 hover:text-accent"
+                          style={{ color: "#654d00ff" }}
                           aria-label={`View ${project.title} on GitHub`}
                         >
-                          <ExternalLink size={14} />
+                          <ExternalLink size={19} />
                         </a>
                       )}
                     </div>
@@ -897,7 +907,7 @@ export default function App() {
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="mt-6 flex items-center gap-2 text-[10px] tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 transition-all duration-300 hover:gap-3"
+                        className="mt-6 flex items-center gap-2 text-[10px] tracking-[0.25em] uppercase opacity-70 group-hover:opacity-100 transition-all duration-300 hover:gap-3"
                         style={{
                           fontFamily: "'Space Mono', monospace",
                           color: "#C84B2F",
