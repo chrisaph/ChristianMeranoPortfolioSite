@@ -190,7 +190,7 @@ function FadeUp({ children, delay = 0, className = "" }: { children: React.React
   );
 }
 
-function ReadingProgress() {
+function ReadingProgress({ scrolled }: { scrolled: boolean }) {
   const [pct, setPct] = useState(0);
   useEffect(() => {
     const fn = () => {
@@ -201,7 +201,11 @@ function ReadingProgress() {
     return () => window.removeEventListener("scroll", fn);
   }, []);
   return (
-    <div className="fixed top-0 left-0 right-0 z-[70] h-[3px] bg-transparent pointer-events-none">
+    <div
+  className={`fixed top-0 left-0 right-0 z-[70] h-[3px] pointer-events-none transition-colors duration-300 ${
+    scrolled ? "bg-background/95 backdrop-blur-md" : "bg-transparent"
+  }`}
+>
       <div
         className="h-full bg-accent transition-[width] duration-75"
         style={{ width: `${pct}%` }}
@@ -306,7 +310,7 @@ export default function App() {
       className="min-h-screen bg-background text-foreground overflow-x-hidden"
       style={{ fontFamily: "'Outfit', sans-serif" }}
     >
-      <ReadingProgress />
+      <ReadingProgress scrolled={scrolled} />
 
       {/* ── BACK TO TOP ── */}
       <button
