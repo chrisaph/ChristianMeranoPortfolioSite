@@ -1,7 +1,7 @@
 
   # My Personal Portfolio Site
 
-  Run `npm i` to install the dependencies.
+  Run `pnpm install` to install the dependencies.
 
-  Run `npm run dev` to start the development server.
+  Run `pnpm dev` to start the development server.
   
