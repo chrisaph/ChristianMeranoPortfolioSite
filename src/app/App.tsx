@@ -341,13 +341,14 @@ export default function App() {
             CM
           </span>
           <span
-            className={`text-[9px] tracking-[0.3em] uppercase transition-colors ${
-              scrolled ? "text-muted-foreground group-hover:text-accent" : "text-[#ffffff]"
-            }`}
-            style={{ fontFamily: "'Space Mono', monospace" }}
-          >
-            ·dev
-          </span>
+          className="text-[9px] tracking-[0.3em] uppercase transition-colors"
+          style={{
+            fontFamily: "'Space Mono', monospace",
+            color: scrolled ? "#8e0000ff" : "#FFFFFF",
+          }}
+        >
+          ·dev
+        </span>
           </button>
 
           {/* desktop links */}
