@@ -708,7 +708,7 @@ export default function App() {
             {skillGroups.map((group, i) => (
               <FadeUp key={group.label} delay={i * 60}>
                 <div
-                  className="p-8 border-b border-r border-foreground/10 group hover:bg-foreground/[0.03] transition-colors duration-300"
+                  className="p-8 border border-foreground/10 group hover:bg-foreground/[0.03] transition-colors duration-300"
                   style={{
                     borderRight: i % 2 === 0 ? undefined : "none",
                     borderBottom: i >= skillGroups.length - 2 ? "none" : undefined,
