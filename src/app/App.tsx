@@ -231,7 +231,7 @@ function Ticker() {
           <span
             key={i}
             className="flex items-center gap-4 text-[10px] tracking-[0.32em] uppercase"
-            style={{ fontFamily: "'Space Mono', monospace", color: "rgba(237,232,208,0.38)" }}
+            style={{ fontFamily: "'Space Mono', monospace", color: "rgba(237,232,208,0.55)" }}
           >
             <span className="block w-1 h-1 rounded-full" style={{ background: "#C84B2F" }} />
             {w}
@@ -523,7 +523,7 @@ export default function App() {
                 </p>
                 <p
                   className="text-[10px] tracking-[0.24em] uppercase"
-                  style={{ fontFamily: "'Space Mono', monospace", color: "rgba(237,232,208,0.28)" }}
+                  style={{ fontFamily: "'Space Mono', monospace", color: "rgba(237,232,208,0.55)" }}
                 >
                   BS Information Systems · De La Salle–CSB · Taguig, PH
                 </p>
@@ -573,7 +573,7 @@ export default function App() {
           
           <span
             className="text-[8px] tracking-[0.4em] uppercase rotate-0"
-            style={{ fontFamily: "'Space Mono', monospace", color: "#EDE8D0" }}
+            style={{ fontFamily: "'Space Mono', monospace", color: "#ffffffff" }}
           >
             Proverbs 16:9
           </span>
