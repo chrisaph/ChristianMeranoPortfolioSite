@@ -120,7 +120,7 @@ const projects = [
 const skillGroups = [
   {
     label: "Languages",
-    skills: ["C#", "Python", "JavaScript", "TypeScript", "Kotlin", "SQL", "HTML / CSS"],
+    skills: ["C#", "Python", "JavaScript", "TypeScript", "Kotlin", "SQL", "HTML", "CSS"],
   },
   {
     label: "Frameworks",
@@ -140,7 +140,7 @@ const skillGroups = [
   },
   {
     label: "Professional",
-    skills: ["Project Leadership", "Client Collaboration", "Agile / Scrum", "Research", "Presentations"],
+    skills: ["Project Leadership", "Client Collaboration", "Scrum", "Research", "Presentations"],
   },
 ];
 
