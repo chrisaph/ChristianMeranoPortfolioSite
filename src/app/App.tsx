@@ -101,7 +101,7 @@ const projects = [
     year: "2025",
     stack: ["Python", "Jupyter Notebook"],
     description:
-      "Development operations project running an RPG generator system on a Linux virtual machine environment.",
+      "Designed a personal TV show tracker using Python, Pandas, the TVMaze API, and Matplotlib to organize watchlists and visualize viewing progress.",
     link: "https://github.com/chrisaph/PersonalWatchlist",
   },
   {
